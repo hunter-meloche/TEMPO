@@ -2,15 +2,15 @@
 Human brains have 2 kinds of memory: short-term (TEMPO) and long-term ([REMO](https://github.com/daveshap/REMO_Framework)).
 
 ### Purpose
-REMO is great at handling old information, but is inefficient when dealing with quick recall of fresh information. It is also left to the user to manage various calls to its API. TEMPO takes care of both of these issues. TEMPO's API only has `memorize` and `remember`; everything else, including REMO memories, are handled automatically.
+[REMO](https://github.com/daveshap/REMO_Framework) is great at handling old information, but is inefficient when dealing with quick recall of fresh information. It is also left to the user to manage various calls to its API. TEMPO takes care of both of these issues. TEMPO's API only has `memorize` and `remember`; everything else, including REMO memories, are handled automatically.
 
 ![image](https://user-images.githubusercontent.com/123516285/233898760-8b797873-dcd7-46ff-a81b-74406f8d76d0.png)
 
 ## Setup
-1. Launch REMO (TEMPO expects this to be on port 8000)
+1. Launch [REMO](https://github.com/daveshap/REMO_Framework) (TEMPO expects this to be on port 8000)
 2. Launch TEMPO (port 8001 if you're using the provided LangFlow json)
-3. Launch LangFlow and import TEMPO-LangFlow.json
-4. Plug in you OpenAI API key into the biggest node on the left
+3. Launch [LangFlow](https://github.com/logspace-ai/langflow) and import TEMPO-LangFlow.json
+4. Plug in you [OpenAI API key](https://platform.openai.com/account/api-keys) into the biggest node on the left
 5. Chat...
 
 ```
