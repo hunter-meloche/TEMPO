@@ -60,7 +60,7 @@ def pop_oldest():
         with open('temp_memo.yaml', 'w') as file:
             yaml.dump(data, file)
     else:
-        print("Failed to store entry in long-term memory. Retrying...")
+        print(f"Failed to store entry in long-term memory: {oldest_entry}")
 
 
 def form_corpus():
@@ -91,7 +91,7 @@ async def rebuild_tree():
             print("REBUILT REMO TREE")
 
 
-def handle_corpus(pop=False, tokens=3000):
+def handle_corpus(pop=False, tokens=1000):
     corpus = form_corpus()
     encoding = tiktoken.encoding_for_model("gpt-3.5-turbo-0301")
     corpus_tokens = len(encoding.encode(corpus)) + 4
