@@ -7,13 +7,14 @@ Human brains have 2 kinds of memory: short-term (TEMPO) and long-term ([REMO](ht
 ![image](https://user-images.githubusercontent.com/123516285/233898760-8b797873-dcd7-46ff-a81b-74406f8d76d0.png)
 
 ## Setup
-1. Launch [REMO](https://github.com/daveshap/REMO_Framework) (TEMPO expects this to be on port 8000)
+1. Setup and launch [REMO](https://github.com/daveshap/REMO_Framework) (TEMPO expects this to be on port 8000)
 2. Launch TEMPO (port 8001 if you're using the provided LangFlow json)
 3. Launch [LangFlow](https://github.com/logspace-ai/langflow) and import TEMPO-LangFlow.json
 4. Plug in you [OpenAI API key](https://platform.openai.com/account/api-keys) into the biggest node on the left
 5. Chat...
 
 ```
+pip install -r requirements.txt
 uvicorn tempo:app --reload --port 8001
 ```
 
